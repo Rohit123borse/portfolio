@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+}
+body {
+  font-size: 1.4rem;
+}
+/* navbar style */
+.navbar-expand-md{
+  background-color:#EC7497;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 100%;
+  box-shadow: 0px 6px 15px #515151;
+}
+.navi{
+  background-color:#EC7497;
+  box-shadow: 0px 6px 15px #515151;
+}
+.navbar-toggler-icon{
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  border: 2px white solid;
+  opacity: 100%;
+}
+ .navbar-toggle{
+  /* border: 2px white solid; */
+  color: #fff;
+  opacity: 100%;
+  margin-left: auto;
+}
+.navbar-brand{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.nav-link:hover{
+    text-decoration: underline 2px #fff;
+    color: #fff;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform:capitalize;
+  background-color:#EC7497;
+  box-shadow: 0px 10px 16px #515151 ;
+}
+.dropdown .dropdown-item{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+.dropdown-menu .dropdown-item:hover{
+  text-decoration: underline 1px #EC7497;
+  color: #EC7497;
+  font-size: 15px;
+}
+/* navbar finish */
+/* main */
+.front{
+  font-size: 4rem;
+  font-weight: bold;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #EC7497;
+  }
+}
+/* .box{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#hero {
+  background: var(--dark-color);
+  padding: 4rem 0;
+  border-bottom: 4px solid var(--lighting-color);
+  max-height: 100vh;
+}
+#hero .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_content {
+  display: grid;
+  place-items: center;
+} */
+
+  #img{
+    border: #EC7497 3px solid;
+  }
+  .unique{
+    color: #EC7497;
+  }
+  .one{
+    border: #EC7497 5px solid;
+  }
+  .card {
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+ 
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+  .card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+  .card_content{
+    background-color: #EC7497;
+  }
+  .card_content h5 {
+    text-align: center;
+    color: #fff;
+  }
+  .a:hover{
+    color: #fff;
+    text-decoration: underline 2px #fff;
+  }
+  .text-muted{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .whatsapp{
+    color: #EC7497;
+  }
+  .form{
+    box-shadow: 0px 6px 15px #515151;
+    border: #EC7497 3px solid;
+    border-radius: 2%;
+  }
+  textarea{
+    height: auto;
+    width: 100%;
+  }
+  .send{
+    background-color: #EC7497;
+    border: 3px #fff solid;
+    color: #fff;
+  }
+  .btn:hover{
+    border: 3px #EC7497 solid;
+    color: #EC7497;
+    background-color: #fff;
+  }
+  .footer{
+    background-color: #EC7497;
+    height: 30px;
+  }
+  
+/* main end */
+/* mediaquery start */
+@media screen and (max-width: 800px) {
+  .dropdown-menu {
+    box-shadow: 3px 3px 15px #515151;
+ }
+ .dropdown-item {
+  font-size: 10px;
+}
+}
+@media screen and (max-width: 900px) {
+  .navbar-expand-md {
+      width: 100%;
+      font-size: 11px;
+  }
+}
